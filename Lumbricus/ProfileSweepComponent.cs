@@ -25,6 +25,17 @@ namespace Lumbricus
         public override Guid ComponentGuid =>
             new Guid("b2c3d4e5-f6a7-8901-bcde-f12345678901");
 
+        protected override System.Drawing.Bitmap Icon
+        {
+            get
+            {
+                var stream = GetType().Assembly.GetManifestResourceStream("Lumbricus.Resources.ProfileSweep.png");
+                if (stream != null)
+                    return new System.Drawing.Bitmap(stream);
+                return null;
+            }
+        }
+
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
             pManager.AddCurveParameter("Polylines", "P", "Toolpath polylines to sweep along. If empty, shows demo vase.", GH_ParamAccess.list);

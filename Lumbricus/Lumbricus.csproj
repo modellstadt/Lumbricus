@@ -11,6 +11,11 @@
 
   <ItemGroup>
     <PackageReference Include="Grasshopper" Version="8.0.23304.1001" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\*.png" />
   </ItemGroup>
 
 </Project>
