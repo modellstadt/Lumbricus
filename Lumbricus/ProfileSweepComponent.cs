@@ -23,7 +23,7 @@ namespace Lumbricus
         { }
 
         public override Guid ComponentGuid =>
-            new Guid("b2c3d4e5-f6a7-8901-bcde-f12345678901");
+            new Guid("D57222B5-14B5-441C-8F04-ACD2FEA2047A");
 
         protected override System.Drawing.Bitmap Icon
         {
