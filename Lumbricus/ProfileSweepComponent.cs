@@ -54,7 +54,7 @@ namespace Lumbricus
             pManager.AddTextParameter("Version", "V", "Component version.", GH_ParamAccess.item);
         }
 
-        private const string VERSION = "0.2.0";
+        private const string VERSION = "0.2.2";
 
         protected override void SolveInstance(IGH_DataAccess DA)
         {
