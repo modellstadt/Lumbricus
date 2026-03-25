@@ -51,10 +51,7 @@ namespace Lumbricus
         protected override void RegisterOutputParams(GH_OutputParamManager pManager)
         {
             pManager.AddMeshParameter("Meshes", "M", "Swept mesh per toolpath.", GH_ParamAccess.list);
-            pManager.AddTextParameter("Version", "V", "Component version.", GH_ParamAccess.item);
         }
-
-        private const string VERSION = "0.2.2";
 
         protected override void SolveInstance(IGH_DataAccess DA)
         {
@@ -111,7 +108,6 @@ namespace Lumbricus
 
             var meshes = SweepProfile(polylines, profile, reverseProfile, cap, useUV, progress);
             DA.SetDataList(0, meshes);
-            DA.SetData(1, VERSION);
         }
 
         /// <summary>
