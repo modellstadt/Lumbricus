@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyTitle>Lumbricus</AssemblyTitle>
     <Description>3D printing path visualization for Grasshopper / Rhino 8</Description>
-    <Version>0.2.3</Version>
+    <Version>0.2.4</Version>
   </PropertyGroup>
 
   <ItemGroup>
